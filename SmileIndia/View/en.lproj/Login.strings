@@ -1,0 +1,141 @@
+
+/* Class = "UIButton"; normalTitle = "SIGN UP"; ObjectID = "0k5-Rj-jqv"; */
+"0k5-Rj-jqv.normalTitle" = "SIGN UP";
+
+/* Class = "UILabel"; text = "Register now to enjoy all the features of Smile India"; ObjectID = "2KL-84-Doo"; */
+"2KL-84-Doo.text" = "Register now to enjoy all the features of Smile India";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "2bf-Ls-Civ"; */
+"2bf-Ls-Civ.normalTitle" = "Forgot Password?";
+
+/* Class = "UIButton"; normalTitle = "Skip this, i'll do it later"; ObjectID = "38a-a5-tDY"; */
+"38a-a5-tDY.normalTitle" = "Skip this, i'll do it later";
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "4SE-1F-GqO"; */
+"4SE-1F-GqO.text" = "Login";
+
+/* Class = "UILabel"; text = "Email ID"; ObjectID = "6zx-7N-19C"; */
+"6zx-7N-19C.text" = "Email ID";
+
+/* Class = "UIButton"; normalTitle = "LOG IN"; ObjectID = "8Mx-iC-yf8"; */
+"8Mx-iC-yf8.normalTitle" = "LOG IN";
+
+/* Class = "UITextField"; placeholder = "Email.."; ObjectID = "9wt-bQ-C3c"; */
+"9wt-bQ-C3c.placeholder" = "Email..";
+
+/* Class = "UILabel"; text = "V I G O R T O"; ObjectID = "B2Y-sD-D3L"; */
+"B2Y-sD-D3L.text" = "V I G O R T O";
+
+/* Class = "UILabel"; text = "Please enter your email address to locate your account."; ObjectID = "CNV-jM-vvW"; */
+"CNV-jM-vvW.text" = "Please enter your email address to locate your account.";
+
+/* Class = "UILabel"; text = "Trouble in Sign in ?"; ObjectID = "ETi-k1-hez"; */
+"ETi-k1-hez.text" = "Trouble in Sign in ?";
+
+/* Class = "UIButton"; normalTitle = "X"; ObjectID = "HBB-ov-L3Z"; */
+"HBB-ov-L3Z.normalTitle" = "X";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "Ji8-b8-ffO"; */
+"Ji8-b8-ffO.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "RECOVER YOUR ACCOUNT!"; ObjectID = "MWc-Ma-8tH"; */
+"MWc-Ma-8tH.normalTitle" = "RECOVER YOUR ACCOUNT!";
+
+/* Class = "UIButton"; normalTitle = "Contact Us"; ObjectID = "Q1S-z7-KSB"; */
+"Q1S-z7-KSB.normalTitle" = "Contact Us";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "Qbo-pC-jRr"; */
+"Qbo-pC-jRr.text" = "Password";
+
+/* Class = "UILabel"; text = "Enter your email address and password to get access your account."; ObjectID = "QdC-4Y-agx"; */
+"QdC-4Y-agx.text" = "Enter your email address and password to get access your account.";
+
+/* Class = "UILabel"; text = "SIGN IN YOUR ACCOUNT"; ObjectID = "Rgm-nH-Y38"; */
+"Rgm-nH-Y38.text" = "SIGN IN YOUR ACCOUNT";
+
+/* Class = "UILabel"; text = "FORGOT YOUR PASSWORD"; ObjectID = "SRn-8g-H0X"; */
+"SRn-8g-H0X.text" = "FORGOT YOUR PASSWORD";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "TYp-b7-asx"; */
+"TYp-b7-asx.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Register now to enjoy all the features of Smile India"; ObjectID = "VhM-bV-TaL"; */
+"VhM-bV-TaL.text" = "Register now to enjoy all the features of Smile India";
+
+/* Class = "UIButton"; normalTitle = "LOG IN"; ObjectID = "WMk-a1-Nio"; */
+"WMk-a1-Nio.normalTitle" = "LOG IN";
+
+/* Class = "UILabel"; text = "Log in to your account"; ObjectID = "YRx-uY-FiS"; */
+"YRx-uY-FiS.text" = "Log in to your account";
+
+/* Class = "UIButton"; normalTitle = "BACK"; ObjectID = "YzA-j3-KWJ"; */
+"YzA-j3-KWJ.normalTitle" = "BACK";
+
+/* Class = "UILabel"; text = "Email ID"; ObjectID = "aFD-xa-hID"; */
+"aFD-xa-hID.text" = "Email ID";
+
+/* Class = "UILabel"; text = "Welcome to Vigorto "; ObjectID = "aVS-jS-urh"; */
+"aVS-jS-urh.text" = "Welcome to Vigorto ";
+
+/* Class = "UIButton"; normalTitle = "LOGIN NOW!"; ObjectID = "bK5-MN-KmN"; */
+"bK5-MN-KmN.normalTitle" = "LOGIN NOW!";
+
+/* Class = "UILabel"; text = "Please enter your email address to locate your account."; ObjectID = "bTS-HD-B0M"; */
+"bTS-HD-B0M.text" = "Please enter your email address to locate your account.";
+
+/* Class = "UIButton"; normalTitle = "Forgot password?"; ObjectID = "dXq-LT-woH"; */
+"dXq-LT-woH.normalTitle" = "Forgot password?";
+
+/* Class = "UILabel"; text = "Not a Member?"; ObjectID = "fkt-4u-dMS"; */
+"fkt-4u-dMS.text" = "Not a Member?";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gOc-do-e3O"; */
+"gOc-do-e3O.text" = "Label";
+
+/* Class = "UILabel"; text = "Forgot Password"; ObjectID = "h15-ky-dqE"; */
+"h15-ky-dqE.text" = "Forgot Password";
+
+/* Class = "UITextField"; placeholder = "Email.."; ObjectID = "hfc-Ad-y5A"; */
+"hfc-Ad-y5A.placeholder" = "Email..";
+
+/* Class = "UIButton"; normalTitle = "Skip this, i'll do it later"; ObjectID = "iTM-Ua-CmM"; */
+"iTM-Ua-CmM.normalTitle" = "Skip this, i'll do it later";
+
+/* Class = "UILabel"; text = "Don't have an account ?"; ObjectID = "j8f-hO-OtN"; */
+"j8f-hO-OtN.text" = "Don't have an account ?";
+
+/* Class = "UIButton"; normalTitle = "Recover Your Account !"; ObjectID = "k1K-pM-fcW"; */
+"k1K-pM-fcW.normalTitle" = "Recover Your Account !";
+
+/* Class = "UIButton"; normalTitle = "Sign Up for Free"; ObjectID = "nPg-N1-4DK"; */
+"nPg-N1-4DK.normalTitle" = "Sign Up for Free";
+
+/* Class = "UILabel"; text = "Remember Me"; ObjectID = "oHJ-Df-bOZ"; */
+"oHJ-Df-bOZ.text" = "Remember Me";
+
+/* Class = "UILabel"; text = "Forgot  Password"; ObjectID = "oXC-3q-lFt"; */
+"oXC-3q-lFt.text" = "Forgot  Password";
+
+/* Class = "UIButton"; normalTitle = "  Create  "; ObjectID = "pH3-fl-mRa"; */
+"pH3-fl-mRa.normalTitle" = "  Create  ";
+
+/* Class = "UITextField"; placeholder = "Password.."; ObjectID = "qbW-mj-eoo"; */
+"qbW-mj-eoo.placeholder" = "Password..";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "reA-d4-YIq"; */
+"reA-d4-YIq.placeholder" = "Email";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "s3w-s7-sXw"; */
+"s3w-s7-sXw.text" = "Label";
+
+/* Class = "UILabel"; text = "Access an exclusive network of healthcare professionals and businesses. "; ObjectID = "sMj-qM-veL"; */
+"sMj-qM-veL.text" = "Access an exclusive network of healthcare professionals and businesses. ";
+
+/* Class = "UILabel"; text = "Remember me?"; ObjectID = "tMv-wH-I9e"; */
+"tMv-wH-I9e.text" = "Remember me?";
+
+/* Class = "UILabel"; text = "Sign up as :"; ObjectID = "vE8-Pv-Lyn"; */
+"vE8-Pv-Lyn.text" = "Sign up as :";
+
+/* Class = "UIButton"; normalTitle = "BACK"; ObjectID = "xG3-Z1-2zs"; */
+"xG3-Z1-2zs.normalTitle" = "BACK";

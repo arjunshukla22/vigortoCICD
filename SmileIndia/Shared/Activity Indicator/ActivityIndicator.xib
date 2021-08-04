@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="ActivityIndicatorView" id="fDv-xf-wNq" customClass="ActivityIndicatorView" customModule="Vigorto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSc-we-teR">
+                    <rect key="frame" x="142.5" y="288.5" width="90" height="90"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Aqs-eQ-GQc">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WqI-XX-TFE">
+                                <rect key="frame" x="26.5" y="26.5" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WqI-XX-TFE" firstAttribute="centerY" secondItem="Aqs-eQ-GQc" secondAttribute="centerY" id="9hx-d0-kJ3"/>
+                            <constraint firstItem="WqI-XX-TFE" firstAttribute="centerX" secondItem="Aqs-eQ-GQc" secondAttribute="centerX" id="Beo-x3-LJc"/>
+                        </constraints>
+                    </view>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="ZTX-Dp-wTd"/>
+                        <constraint firstAttribute="width" constant="90" id="t53-JW-ELp"/>
+                    </constraints>
+                    <blurEffect style="extraLight"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.35434503420000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="nSc-we-teR" firstAttribute="centerX" secondItem="fDv-xf-wNq" secondAttribute="centerX" id="j6K-Zt-k0j"/>
+                <constraint firstItem="nSc-we-teR" firstAttribute="centerY" secondItem="fDv-xf-wNq" secondAttribute="centerY" id="tnM-O3-Gun"/>
+            </constraints>
+            <connections>
+                <outlet property="spinner" destination="WqI-XX-TFE" id="uap-4H-UHY"/>
+            </connections>
+            <point key="canvasLocation" x="219.5" y="-256.5"/>
+        </view>
+    </objects>
+</document>

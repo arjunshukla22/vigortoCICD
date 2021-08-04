@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sofia Pro Bold Az.otf">
+            <string>SofiaPro-Bold</string>
+        </array>
+        <array key="Sofia Pro Medium Az.otf">
+            <string>SofiaPro-Medium</string>
+        </array>
+        <array key="Sofia Pro Regular Az.otf">
+            <string>SofiaPro</string>
+        </array>
+        <array key="Sofia Pro Semi Bold Az.otf">
+            <string>SofiaPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About Us View Controller-->
+        <scene sceneID="Xwb-KJ-gDM">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsViewController" id="NEW-M6-AFP" customClass="AboutUsViewController" customModule="Vigorto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E4M-bB-EJ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2D3-F6-2z8" userLabel="About Us, FAQs, Terms &amp; Conditions">
+                                <rect key="frame" x="10" y="59" width="394" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="URb-x4-F7B"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Terms &amp; Conditions"/>
+                                    <segment title="Security &amp; Privacy"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.98039215690000003" green="0.63921568630000003" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gj-Gf-T9J">
+                                <rect key="frame" x="0.0" y="10" width="414" height="44"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="izm-Lr-RgP">
+                                        <rect key="frame" x="15" y="10" width="114" height="24"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ny-2I-g1R">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" image="backblack"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didtapBack:" destination="NEW-M6-AFP" eventType="touchUpInside" id="U35-EV-UFK"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIs-zv-3Le">
+                                                <rect key="frame" x="44" y="0.0" width="70" height="24"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="8l5-nG-SOI"/>
+                                    <constraint firstItem="izm-Lr-RgP" firstAttribute="centerY" secondItem="8gj-Gf-T9J" secondAttribute="centerY" id="gVq-vx-atA"/>
+                                    <constraint firstItem="izm-Lr-RgP" firstAttribute="leading" secondItem="8gj-Gf-T9J" secondAttribute="leading" constant="15" id="tyJ-zV-R8M"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j69-1M-eTb">
+                                <rect key="frame" x="10" y="103" width="394" height="625"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QNj-9U-Rrq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QNj-9U-Rrq" firstAttribute="trailing" secondItem="2D3-F6-2z8" secondAttribute="trailing" constant="10" id="24A-OJ-H1c"/>
+                            <constraint firstAttribute="bottom" secondItem="j69-1M-eTb" secondAttribute="bottom" constant="8" id="HLj-rr-EZ1"/>
+                            <constraint firstItem="2D3-F6-2z8" firstAttribute="leading" secondItem="QNj-9U-Rrq" secondAttribute="leading" constant="10" id="M15-fM-JLZ"/>
+                            <constraint firstItem="2D3-F6-2z8" firstAttribute="top" secondItem="8gj-Gf-T9J" secondAttribute="bottom" constant="5" id="PvE-IM-Cur"/>
+                            <constraint firstItem="QNj-9U-Rrq" firstAttribute="trailing" secondItem="j69-1M-eTb" secondAttribute="trailing" constant="10" id="X8S-XP-3rt"/>
+                            <constraint firstItem="8gj-Gf-T9J" firstAttribute="top" secondItem="QNj-9U-Rrq" secondAttribute="top" constant="10" id="ZQE-Ax-CcK"/>
+                            <constraint firstItem="j69-1M-eTb" firstAttribute="top" secondItem="2D3-F6-2z8" secondAttribute="bottom" id="ndA-Q6-d65"/>
+                            <constraint firstItem="8gj-Gf-T9J" firstAttribute="trailing" secondItem="QNj-9U-Rrq" secondAttribute="trailing" id="oXu-uh-V2r"/>
+                            <constraint firstItem="j69-1M-eTb" firstAttribute="leading" secondItem="QNj-9U-Rrq" secondAttribute="leading" constant="10" id="ost-x1-wBn"/>
+                            <constraint firstItem="8gj-Gf-T9J" firstAttribute="leading" secondItem="QNj-9U-Rrq" secondAttribute="leading" id="q35-H6-LOA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segment" destination="2D3-F6-2z8" id="ZUQ-ym-JBd"/>
+                        <outlet property="wView" destination="j69-1M-eTb" id="PCJ-av-zr5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R9T-C4-aMj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="585.50724637681162" y="114.50892857142857"/>
+        </scene>
+        <!--Contact UsVC-->
+        <scene sceneID="W9S-jy-M6S">
+            <objects>
+                <viewController storyboardIdentifier="ContactUsVC" id="bfC-hB-LKJ" customClass="ContactUsVC" customModule="Vigorto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pEc-sB-O0i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dyi-fR-wMf">
+                                <rect key="frame" x="0.0" y="10" width="414" height="44"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PvV-VY-4zP">
+                                        <rect key="frame" x="15" y="7" width="126" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Qg-hp-SJU">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="JzW-qZ-HBj"/>
+                                                    <constraint firstAttribute="height" constant="30" id="yqY-MU-kS3"/>
+                                                </constraints>
+                                                <state key="normal" image="backblack"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didtapBack:" destination="bfC-hB-LKJ" eventType="touchUpInside" id="Ztp-Tm-Wrh"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynx-QN-sJZ">
+                                                <rect key="frame" x="40" y="0.0" width="86" height="30"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Contact Us"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NeE-OD-M9z"/>
+                                    <constraint firstItem="PvV-VY-4zP" firstAttribute="centerY" secondItem="Dyi-fR-wMf" secondAttribute="centerY" id="RMa-gX-gnp"/>
+                                    <constraint firstItem="PvV-VY-4zP" firstAttribute="leading" secondItem="Dyi-fR-wMf" secondAttribute="leading" constant="15" id="zK7-cC-lTs"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2d-4k-orN">
+                                <rect key="frame" x="0.0" y="54" width="414" height="846"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NKl-Fe-ZBh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="768"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contactusnew" translatesAutoresizingMaskIntoConstraints="NO" id="agM-Ia-0yu">
+                                                <rect key="frame" x="142" y="50" width="130" height="130"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="130" id="qg1-2u-u78">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="130" id="rFz-bk-VvU">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                                    </constraint>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wcv-SB-i7A">
+                                                <rect key="frame" x="128.66666666666669" y="237" width="156.66666666666669" height="30"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oA-SN-ZZl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="30"/>
+                                                        <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="18"/>
+                                                        <state key="normal" title="Email Us">
+                                                            <color key="titleColor" red="0.20197111370000001" green="0.70533198119999996" blue="0.54900377990000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="25"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="didtapEmail:" destination="bfC-hB-LKJ" eventType="touchUpInside" id="1vF-18-SUt"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HnA-bk-81f">
+                                                        <rect key="frame" x="78" y="0.0" width="14.666666666666671" height="30"/>
+                                                        <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="25"/>
+                                                        </variation>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBa-9V-JXT">
+                                                        <rect key="frame" x="99.666666666666686" y="0.0" width="57" height="30"/>
+                                                        <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="18"/>
+                                                        <state key="normal" title="Call Us">
+                                                            <color key="titleColor" red="0.20197111370000001" green="0.70533198119999996" blue="0.54900377990000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Call Us"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="25"/>
+                                                        </variation>
+                                                        <connections>
+                                                            <action selector="didtapPhone:" destination="bfC-hB-LKJ" eventType="touchUpInside" id="T2U-2i-ENU"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any issues or suggestions?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkz-hj-llL">
+                                                <rect key="frame" x="8" y="200" width="398" height="22"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Any issues or suggestions?"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="25"/>
+                                                </variation>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vg50" translatesAutoresizingMaskIntoConstraints="NO" id="hrf-2b-7kf">
+                                                <rect key="frame" x="167" y="571" width="80" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="0Pz-oc-7UQ"/>
+                                                    <constraint firstAttribute="height" constant="80" id="gp0-c9-D8k"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nvf-t6-LqK">
+                                                <rect key="frame" x="20" y="377" width="374" height="70"/>
+                                                <color key="backgroundColor" red="0.20197111370000001" green="0.70533198119999996" blue="0.54900377990000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="WuZ-xI-2Cf">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didTapcall:" destination="bfC-hB-LKJ" eventType="touchUpInside" id="L6i-g3-hR6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y0P-OV-Ta2">
+                                                <rect key="frame" x="20" y="307" width="374" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="G4t-ZX-78c">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="support@vigorto.com">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.041963972150000001" green="0.72153615950000005" blue="0.53723496199999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.20197111370000001" green="0.70533198119999996" blue="0.54900377990000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="SofiaPro-Medium" family="Sofia Pro" pointSize="25"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="didTapMail:" destination="bfC-hB-LKJ" eventType="touchUpInside" id="ymU-vc-5Od"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWK-1s-G6O">
+                                                <rect key="frame" x="30" y="656" width="354" height="13"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="18"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2021 Vigorto All Rights Reserved" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iic-va-0pr">
+                                                <rect key="frame" x="5" y="671" width="404" height="11"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Copyright © 2021 Vigorto All Rights Reserved"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="17"/>
+                                                </variation>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luN-QA-4Le">
+                                                <rect key="frame" x="20" y="467" width="374" height="54"/>
+                                                <string key="text">Our customer service is available Monday to Friday 10 am - 5 pm (CST). If you need urgent assistance, do not use this service. Call 9-1-1</string>
+                                                <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey">
+                                                        <string key="value">Our customer service is available Monday to Friday 10 am - 5 pm (CST). If you need urgent assistance, do not use this service. Call 9-1-1</string>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="20"/>
+                                                </variation>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="luN-QA-4Le" firstAttribute="trailing" secondItem="Nvf-t6-LqK" secondAttribute="trailing" id="2OY-32-k6a"/>
+                                            <constraint firstItem="agM-Ia-0yu" firstAttribute="centerX" secondItem="NKl-Fe-ZBh" secondAttribute="centerX" id="7dB-fa-JNZ"/>
+                                            <constraint firstItem="wcv-SB-i7A" firstAttribute="top" secondItem="nkz-hj-llL" secondAttribute="bottom" constant="15" id="93l-wE-9p8"/>
+                                            <constraint firstItem="pWK-1s-G6O" firstAttribute="leading" secondItem="NKl-Fe-ZBh" secondAttribute="leading" constant="30" id="9GU-6c-sbS"/>
+                                            <constraint firstItem="nkz-hj-llL" firstAttribute="leading" secondItem="NKl-Fe-ZBh" secondAttribute="leading" constant="8" id="Ane-Z3-oI4"/>
+                                            <constraint firstItem="wcv-SB-i7A" firstAttribute="centerX" secondItem="NKl-Fe-ZBh" secondAttribute="centerX" id="BIS-9e-nwa"/>
+                                            <constraint firstItem="luN-QA-4Le" firstAttribute="top" secondItem="Nvf-t6-LqK" secondAttribute="bottom" constant="20" id="MPY-QI-hhg">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                            </constraint>
+                                            <constraint firstItem="Nvf-t6-LqK" firstAttribute="leading" secondItem="y0P-OV-Ta2" secondAttribute="leading" id="MVP-Y7-T9M"/>
+                                            <constraint firstItem="hrf-2b-7kf" firstAttribute="centerX" secondItem="NKl-Fe-ZBh" secondAttribute="centerX" id="N6H-um-Oty"/>
+                                            <constraint firstAttribute="trailing" secondItem="iic-va-0pr" secondAttribute="trailing" constant="5" id="Oxe-rz-CVw"/>
+                                            <constraint firstItem="pWK-1s-G6O" firstAttribute="top" secondItem="hrf-2b-7kf" secondAttribute="bottom" constant="5" id="PoY-HA-rjX"/>
+                                            <constraint firstAttribute="trailing" secondItem="y0P-OV-Ta2" secondAttribute="trailing" constant="20" id="baH-dl-2Zj"/>
+                                            <constraint firstItem="luN-QA-4Le" firstAttribute="leading" secondItem="Nvf-t6-LqK" secondAttribute="leading" id="hHl-BI-zyq"/>
+                                            <constraint firstItem="Nvf-t6-LqK" firstAttribute="top" secondItem="y0P-OV-Ta2" secondAttribute="bottom" constant="20" id="jbG-lx-jMo"/>
+                                            <constraint firstItem="iic-va-0pr" firstAttribute="top" secondItem="pWK-1s-G6O" secondAttribute="bottom" constant="2" id="l4g-Su-Upm"/>
+                                            <constraint firstItem="agM-Ia-0yu" firstAttribute="top" secondItem="NKl-Fe-ZBh" secondAttribute="top" constant="50" id="lpC-vs-5kO"/>
+                                            <constraint firstItem="Nvf-t6-LqK" firstAttribute="trailing" secondItem="y0P-OV-Ta2" secondAttribute="trailing" id="mBx-Nt-phk"/>
+                                            <constraint firstItem="nkz-hj-llL" firstAttribute="top" secondItem="agM-Ia-0yu" secondAttribute="bottom" constant="20" id="nej-Nd-iDn">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                            </constraint>
+                                            <constraint firstItem="iic-va-0pr" firstAttribute="centerX" secondItem="NKl-Fe-ZBh" secondAttribute="centerX" id="rFW-s9-vPe"/>
+                                            <constraint firstAttribute="trailing" secondItem="nkz-hj-llL" secondAttribute="trailing" constant="8" id="rVL-s6-RKh"/>
+                                            <constraint firstItem="y0P-OV-Ta2" firstAttribute="top" secondItem="wcv-SB-i7A" secondAttribute="bottom" constant="40" id="spe-NH-pGp"/>
+                                            <constraint firstAttribute="height" constant="768" id="t5M-Vk-s4k"/>
+                                            <constraint firstItem="y0P-OV-Ta2" firstAttribute="leading" secondItem="NKl-Fe-ZBh" secondAttribute="leading" constant="20" id="te9-4n-hos"/>
+                                            <constraint firstItem="hrf-2b-7kf" firstAttribute="top" secondItem="luN-QA-4Le" secondAttribute="bottom" constant="50" id="xRr-eO-cU0"/>
+                                            <constraint firstItem="iic-va-0pr" firstAttribute="leading" secondItem="NKl-Fe-ZBh" secondAttribute="leading" constant="5" id="xXt-3b-GAA"/>
+                                            <constraint firstAttribute="trailing" secondItem="pWK-1s-G6O" secondAttribute="trailing" constant="30" id="yOQ-Df-XOG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NKl-Fe-ZBh" firstAttribute="centerX" secondItem="W2d-4k-orN" secondAttribute="centerX" id="8ZV-b5-wDC"/>
+                                    <constraint firstItem="NKl-Fe-ZBh" firstAttribute="centerY" secondItem="W2d-4k-orN" secondAttribute="centerY" priority="250" id="NSA-aO-x79"/>
+                                    <constraint firstItem="NKl-Fe-ZBh" firstAttribute="top" secondItem="W2d-4k-orN" secondAttribute="top" id="Ttl-el-f1M"/>
+                                    <constraint firstItem="NKl-Fe-ZBh" firstAttribute="leading" secondItem="W2d-4k-orN" secondAttribute="leading" id="a0d-md-5yW"/>
+                                    <constraint firstAttribute="bottom" secondItem="NKl-Fe-ZBh" secondAttribute="bottom" id="jdn-I6-Iq3"/>
+                                    <constraint firstAttribute="trailing" secondItem="NKl-Fe-ZBh" secondAttribute="trailing" id="yYT-IZ-70s"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PER-gs-Tjf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PER-gs-Tjf" firstAttribute="trailing" secondItem="W2d-4k-orN" secondAttribute="trailing" id="BXB-Xi-eby"/>
+                            <constraint firstItem="W2d-4k-orN" firstAttribute="top" secondItem="Dyi-fR-wMf" secondAttribute="bottom" id="EE3-ch-lwY"/>
+                            <constraint firstItem="Dyi-fR-wMf" firstAttribute="leading" secondItem="PER-gs-Tjf" secondAttribute="leading" id="UNd-pq-3hU"/>
+                            <constraint firstItem="Dyi-fR-wMf" firstAttribute="trailing" secondItem="PER-gs-Tjf" secondAttribute="trailing" id="cTc-YT-rLJ"/>
+                            <constraint firstItem="Dyi-fR-wMf" firstAttribute="top" secondItem="PER-gs-Tjf" secondAttribute="top" constant="10" id="fac-TE-5k0"/>
+                            <constraint firstItem="W2d-4k-orN" firstAttribute="leading" secondItem="PER-gs-Tjf" secondAttribute="leading" id="hJd-XS-LMa"/>
+                            <constraint firstItem="PER-gs-Tjf" firstAttribute="bottom" secondItem="W2d-4k-orN" secondAttribute="bottom" id="vti-5X-Faz"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="900"/>
+                    <connections>
+                        <outlet property="phoneNumBtn" destination="Nvf-t6-LqK" id="eCe-AY-JiP"/>
+                        <outlet property="versionLabel" destination="pWK-1s-G6O" id="TYF-XS-eD5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eoe-Xy-hyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1245" y="35"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backblack" width="24" height="24"/>
+        <image name="contactusnew" width="150" height="150"/>
+        <image name="vg50" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

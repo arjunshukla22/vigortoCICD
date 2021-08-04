@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sofia Pro Bold Az.otf">
+            <string>SofiaPro-Bold</string>
+        </array>
+        <array key="Sofia Pro Regular Az.otf">
+            <string>SofiaPro</string>
+        </array>
+        <array key="Sofia Pro Semi Bold Az.otf">
+            <string>SofiaPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Rewards View Controller-->
+        <scene sceneID="6ZK-of-icY">
+            <objects>
+                <viewController storyboardIdentifier="RewardsViewController" id="9KO-hb-PTs" customClass="RewardsViewController" customModule="Vigorto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cpe-qG-CNA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQG-2I-F7o">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0vt-4p-Kxa">
+                                        <rect key="frame" x="15" y="7" width="108.5" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gl-H4-E0c">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="KsV-PU-cuC"/>
+                                                    <constraint firstAttribute="width" constant="30" id="weL-hN-k8R"/>
+                                                </constraints>
+                                                <state key="normal" image="backblack"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="didtapBack:" destination="9KO-hb-PTs" eventType="touchUpInside" id="6XJ-RY-ieC"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rewards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpd-Gx-10U">
+                                                <rect key="frame" x="40" y="0.0" width="68.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Rewards"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7uD-Mo-rDw"/>
+                                    <constraint firstItem="0vt-4p-Kxa" firstAttribute="centerY" secondItem="yQG-2I-F7o" secondAttribute="centerY" id="d6e-17-8C2"/>
+                                    <constraint firstItem="0vt-4p-Kxa" firstAttribute="leading" secondItem="yQG-2I-F7o" secondAttribute="leading" constant="15" id="uxy-Qh-dYe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3kg-ux-0cK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="200"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-ZQ-0Wv">
+                                        <rect key="frame" x="20" y="25" width="150" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Earned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMI-QE-pJf">
+                                                <rect key="frame" x="15" y="50" width="120" height="16"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIu-4w-9eJ">
+                                                <rect key="frame" x="15" y="71" width="18.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro-Bold" family="Sofia Pro" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOG-nl-qi4">
+                                                <rect key="frame" x="38.5" y="81" width="106.5" height="15"/>
+                                                <fontDescription key="fontDescription" name="SofiaPro" family="Sofia Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.23137254900000001" green="0.81568627449999997" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="bIu-4w-9eJ" firstAttribute="leading" secondItem="ebU-ZQ-0Wv" secondAttribute="leading" constant="15" id="0jg-kC-a0W"/>
+                                            <constraint firstAttribute="trailing" secondItem="vMI-QE-pJf" secondAttribute="trailing" constant="15" id="1AR-BB-qJO"/>
+                                            <constraint firstAttribute="height" constant="150" id="GjW-Nj-eLp"/>
+                                            <constraint firstAttribute="width" constant="150" id="LkU-aL-dxU"/>
+                                            <constraint firstItem="bIu-4w-9eJ" firstAttribute="top" secondItem="vMI-QE-pJf" secondAttribute="bottom" constant="5" id="NSQ-X5-MxE"/>
+                                            <constraint firstAttribute="trailing" secondItem="JOG-nl-qi4" secondAttribute="trailing" constant="5" id="QpB-Dh-r93"/>
+                                            <constraint firstItem="JOG-nl-qi4" firstAttribute="leading" secondItem="bIu-4w-9eJ" secondAttribute="trailing" constant="5" id="aOG-U2-GCn"/>
+                                            <constraint firstItem="vMI-QE-pJf" firstAttribute="top" secondItem="ebU-ZQ-0Wv" secondAttribute="top" constant="50" id="cYx-5O-cmI"/>
+                                            <constraint firstItem="vMI-QE-pJf" firstAttribute="leading" secondItem="ebU-ZQ-0Wv" secondAttribute="leading" constant="15" id="k7d-wk-jBF"/>
+                                            <constraint firstItem="JOG-nl-qi4" firstAttribute="top" secondItem="vMI-QE-pJf" secondAttribute="bottom" constant="15" id="s9Z-b4-Ura"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewards_bg" translatesAutoresizingMaskIntoConstraints="NO" id="IG0-qA-ayC">
+                                        <rect key="frame" x="234" y="20" width="160" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="Nhe-qs-0Td"/>
+                                            <constraint firstAttribute="height" constant="160" id="vcm-Ox-H3c"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.3296420276" green="0.88274204730000005" blue="0.68233138319999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="ebU-ZQ-0Wv" firstAttribute="leading" secondItem="3kg-ux-0cK" secondAttribute="leading" constant="20" id="1NR-YV-cxZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="IG0-qA-ayC" secondAttribute="trailing" constant="20" id="9OZ-hu-iEB"/>
+                                    <constraint firstItem="IG0-qA-ayC" firstAttribute="centerY" secondItem="3kg-ux-0cK" secondAttribute="centerY" id="QVo-zZ-Skv"/>
+                                    <constraint firstItem="ebU-ZQ-0Wv" firstAttribute="centerY" secondItem="3kg-ux-0cK" secondAttribute="centerY" id="bJb-wo-54q"/>
+                                    <constraint firstAttribute="height" constant="200" id="k9h-kM-PEW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KLc-sw-afk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yQG-2I-F7o" firstAttribute="leading" secondItem="KLc-sw-afk" secondAttribute="leading" id="224-FE-Aub"/>
+                            <constraint firstItem="3kg-ux-0cK" firstAttribute="top" secondItem="yQG-2I-F7o" secondAttribute="bottom" id="8Ib-sU-wQf"/>
+                            <constraint firstItem="KLc-sw-afk" firstAttribute="trailing" secondItem="3kg-ux-0cK" secondAttribute="trailing" id="Hc0-ZC-2fU"/>
+                            <constraint firstItem="3kg-ux-0cK" firstAttribute="leading" secondItem="KLc-sw-afk" secondAttribute="leading" id="NYK-gX-yCl"/>
+                            <constraint firstItem="yQG-2I-F7o" firstAttribute="trailing" secondItem="KLc-sw-afk" secondAttribute="trailing" id="bAh-Ap-TAs"/>
+                            <constraint firstItem="yQG-2I-F7o" firstAttribute="top" secondItem="KLc-sw-afk" secondAttribute="top" id="p50-dA-Glm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rpLabel" destination="bIu-4w-9eJ" id="7rH-oo-QRd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bfR-Fj-OUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-226.08695652173915" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backblack" width="24" height="24"/>
+        <image name="rewards_bg" width="150" height="150"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

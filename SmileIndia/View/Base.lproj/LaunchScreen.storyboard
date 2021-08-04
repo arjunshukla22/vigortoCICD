@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sofia Pro Semi Bold Az.otf">
+            <string>SofiaPro-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomelogo" translatesAutoresizingMaskIntoConstraints="NO" id="8SS-qC-D4v">
+                                <rect key="frame" x="117.5" y="263.5" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="PlI-lZ-cJi">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="140" id="jPR-on-N63">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V I G O R T O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWL-DR-hXK">
+                                <rect key="frame" x="0.0" y="418" width="375" height="33"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="32"/>
+                                <color key="textColor" red="0.23137254900000001" green="0.81568627449999997" blue="0.53725490200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.3803921569" green="0.73333333329999995" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="50"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8SS-qC-D4v" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2Oy-of-8T2"/>
+                            <constraint firstItem="8SS-qC-D4v" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="FEJ-bp-VLZ"/>
+                            <constraint firstItem="bWL-DR-hXK" firstAttribute="top" secondItem="8SS-qC-D4v" secondAttribute="bottom" constant="14.5" id="eoL-Bv-3xX"/>
+                            <constraint firstItem="bWL-DR-hXK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jMi-gk-Gh2"/>
+                            <constraint firstItem="bWL-DR-hXK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oP8-2t-cDI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="welcomelogo" width="220" height="220"/>
+    </resources>
+</document>

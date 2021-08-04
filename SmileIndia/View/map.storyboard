@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EZo-aC-tjH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MapVC-->
+        <scene sceneID="fsE-Vz-7ZK">
+            <objects>
+                <viewController storyboardIdentifier="MapVC" id="0PQ-f9-FnQ" customClass="MapVC" customModule="Vigorto" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3xN-fE-8ff"/>
+                        <viewControllerLayoutGuide type="bottom" id="T0L-0Q-14t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uur-ON-PtM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ylA-LN-4vQ">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0PQ-f9-FnQ" id="vNO-W0-RyQ"/>
+                                </connections>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0BX-fl-JiL">
+                                <rect key="frame" x="30" y="788" width="354" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE5-cG-Xzi">
+                                        <rect key="frame" x="0.0" y="0.0" width="175.5" height="44"/>
+                                        <color key="backgroundColor" red="0.23290646079999999" green="0.81562638279999999" blue="0.53805595640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Dxw-RY-aUS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didtapCancel:" destination="0PQ-f9-FnQ" eventType="touchUpInside" id="5iV-jX-U0R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENo-20-4CX">
+                                        <rect key="frame" x="183.5" y="0.0" width="170.5" height="44"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="jBt-Ug-XJg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="Update">
+                                            <color key="titleColor" red="0.23290646079999999" green="0.81562638279999999" blue="0.53805595640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.23290646079999999" green="0.81562638279999999" blue="0.53805595640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="didTapUpdate:" destination="0PQ-f9-FnQ" eventType="touchUpInside" id="37k-M0-StD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cE5-cG-Xzi" firstAttribute="width" secondItem="ENo-20-4CX" secondAttribute="width" multiplier="1.02667" id="qcz-nc-39H"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="T0L-0Q-14t" firstAttribute="top" secondItem="ylA-LN-4vQ" secondAttribute="bottom" id="4Qr-U1-YGq"/>
+                            <constraint firstItem="T0L-0Q-14t" firstAttribute="top" secondItem="0BX-fl-JiL" secondAttribute="bottom" constant="30" id="6ur-nr-bcM"/>
+                            <constraint firstItem="F6L-rX-oJP" firstAttribute="trailing" secondItem="0BX-fl-JiL" secondAttribute="trailing" constant="30" id="WEy-Vw-ZJj"/>
+                            <constraint firstItem="0BX-fl-JiL" firstAttribute="leading" secondItem="F6L-rX-oJP" secondAttribute="leading" constant="30" id="pvJ-vO-i8T"/>
+                            <constraint firstItem="ylA-LN-4vQ" firstAttribute="leading" secondItem="uur-ON-PtM" secondAttribute="leading" id="s3U-fq-k23"/>
+                            <constraint firstItem="ylA-LN-4vQ" firstAttribute="top" secondItem="3xN-fE-8ff" secondAttribute="bottom" id="sZc-fj-SsG"/>
+                            <constraint firstAttribute="trailing" secondItem="ylA-LN-4vQ" secondAttribute="trailing" id="tHn-GO-uHY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F6L-rX-oJP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZjK-Fh-ctK"/>
+                    <connections>
+                        <outlet property="mapView" destination="ylA-LN-4vQ" id="xur-yT-xnM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOP-1E-lD0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1291" y="209"/>
+        </scene>
+        <!--Location Search Table-->
+        <scene sceneID="623-va-Phu">
+            <objects>
+                <tableViewController storyboardIdentifier="LocationSearchTable" id="g6E-BC-RfR" customClass="LocationSearchTable" customModule="Vigorto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GVT-fN-Pev">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="kCd-zT-vkC" detailTextLabel="6FV-eR-En0" style="IBUITableViewCellStyleSubtitle" id="liN-Sw-B0D">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="liN-Sw-B0D" id="wpS-RS-Nyf">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kCd-zT-vkC">
+                                            <rect key="frame" x="20" y="6" width="31.5" height="19.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6FV-eR-En0">
+                                            <rect key="frame" x="20" y="25.5" width="40.5" height="13.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="g6E-BC-RfR" id="aYe-fj-u4N"/>
+                            <outlet property="delegate" destination="g6E-BC-RfR" id="fdD-md-gmS"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSZ-ZO-R68" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952" y="216"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FdZ-L0-asl">
+            <objects>
+                <navigationController storyboardIdentifier="MapNav" automaticallyAdjustsScrollViewInsets="NO" id="EZo-aC-tjH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ov-Ib-rhD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0PQ-f9-FnQ" kind="relationship" relationship="rootViewController" id="cmR-mS-n7e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uxM-xe-qEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603" y="209"/>
+        </scene>
+    </scenes>
+</document>
