@@ -311,9 +311,6 @@
 		DC936F1F25E4C9FC00D0A962 /* UpdateInsurancecardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC936F1E25E4C9FC00D0A962 /* UpdateInsurancecardVC.swift */; };
 		DC94837A2435B17A004A1E81 /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9483792435B17A004A1E81 /* CallViewController.swift */; };
 		DC94837D2435B710004A1E81 /* EAppointmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC94837C2435B710004A1E81 /* EAppointmentsVC.swift */; };
-		DC9483832435BCD7004A1E81 /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC94837F2435BCD7004A1E81 /* incoming.wav */; };
-		DC9483842435BCD7004A1E81 /* ringback.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC9483802435BCD7004A1E81 /* ringback.wav */; };
-		DC9483852435BCD7004A1E81 /* SINUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC9483812435BCD7004A1E81 /* SINUIViewController.m */; };
 		DC97226D24BDD15A0003D9D1 /* VideoCallEnxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97226C24BDD15A0003D9D1 /* VideoCallEnxVC.swift */; };
 		DC97226F24BDD33F0003D9D1 /* VCXServicesClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97226E24BDD33F0003D9D1 /* VCXServicesClass.swift */; };
 		DC97227924BDD50F0003D9D1 /* VCXConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97227824BDD50F0003D9D1 /* VCXConstant.swift */; };
@@ -359,8 +356,6 @@
 		DCEE290E2418B22100AD6134 /* DoctoDashBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE290C2418B22100AD6134 /* DoctoDashBoardCell.swift */; };
 		DCEE290F2418B22100AD6134 /* DoctoDashBoardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCEE290D2418B22100AD6134 /* DoctoDashBoardCell.xib */; };
 		DCEE29122418BF9C00AD6134 /* MemberDbVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEE29112418BF9C00AD6134 /* MemberDbVC.swift */; };
-		DCF51F042480F3300095D4F8 /* AudioControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF51F002480F32F0095D4F8 /* AudioControllerDelegate.m */; };
-		DCF51F052480F3300095D4F8 /* SINCallKitProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DCF51F032480F3300095D4F8 /* SINCallKitProvider.m */; };
 		DCF6E85D2695C67D00461435 /* RatingList+Reviews+Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6E85C2695C67D00461435 /* RatingList+Reviews+Rate.swift */; };
 		DCF6E8602695DE6900461435 /* BankAccountScreenTxt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6E85F2695DE6900461435 /* BankAccountScreenTxt.swift */; };
 		DCF6E892269817AF00461435 /* HeadingLblTxt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6E891269817AC00461435 /* HeadingLblTxt.swift */; };
@@ -678,10 +673,6 @@
 		DC936F1E25E4C9FC00D0A962 /* UpdateInsurancecardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInsurancecardVC.swift; sourceTree = "<group>"; };
 		DC9483792435B17A004A1E81 /* CallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
 		DC94837C2435B710004A1E81 /* EAppointmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EAppointmentsVC.swift; sourceTree = "<group>"; };
-		DC94837F2435BCD7004A1E81 /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
-		DC9483802435BCD7004A1E81 /* ringback.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringback.wav; sourceTree = "<group>"; };
-		DC9483812435BCD7004A1E81 /* SINUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SINUIViewController.m; sourceTree = "<group>"; };
-		DC9483822435BCD7004A1E81 /* SINUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINUIViewController.h; sourceTree = "<group>"; };
 		DC97226C24BDD15A0003D9D1 /* VideoCallEnxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallEnxVC.swift; sourceTree = "<group>"; };
 		DC97226E24BDD33F0003D9D1 /* VCXServicesClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCXServicesClass.swift; sourceTree = "<group>"; };
 		DC97227824BDD50F0003D9D1 /* VCXConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCXConstant.swift; sourceTree = "<group>"; };
@@ -729,11 +720,6 @@
 		DCEE290C2418B22100AD6134 /* DoctoDashBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctoDashBoardCell.swift; sourceTree = "<group>"; };
 		DCEE290D2418B22100AD6134 /* DoctoDashBoardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctoDashBoardCell.xib; sourceTree = "<group>"; };
 		DCEE29112418BF9C00AD6134 /* MemberDbVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDbVC.swift; sourceTree = "<group>"; };
-		DCF51F002480F32F0095D4F8 /* AudioControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioControllerDelegate.m; sourceTree = "<group>"; };
-		DCF51F012480F32F0095D4F8 /* AudioControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioControllerDelegate.h; sourceTree = "<group>"; };
-		DCF51F022480F32F0095D4F8 /* SINCallKitProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SINCallKitProvider.h; sourceTree = "<group>"; };
-		DCF51F032480F3300095D4F8 /* SINCallKitProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SINCallKitProvider.m; sourceTree = "<group>"; };
-		DCF51F062480F3A40095D4F8 /* SmileIndia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmileIndia-Bridging-Header.h"; sourceTree = "<group>"; };
 		DCF6E85C2695C67D00461435 /* RatingList+Reviews+Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RatingList+Reviews+Rate.swift"; sourceTree = "<group>"; };
 		DCF6E85F2695DE6900461435 /* BankAccountScreenTxt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountScreenTxt.swift; sourceTree = "<group>"; };
 		DCF6E891269817AC00461435 /* HeadingLblTxt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingLblTxt.swift; sourceTree = "<group>"; };
@@ -741,6 +727,7 @@
 		DCFB62DE269C4E08008F9774 /* InsurenceScreenTxt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsurenceScreenTxt.swift; sourceTree = "<group>"; };
 		DCFCEF2E241A20B500687007 /* MorningTimingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningTimingsVC.swift; sourceTree = "<group>"; };
 		DCFCEF30241A6A8400687007 /* EveningTimingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveningTimingsVC.swift; sourceTree = "<group>"; };
+		DCFEA4BB26BA92D600C69678 /* SmileIndia-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SmileIndia-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1667,7 +1654,7 @@
 		DC9483782435B140004A1E81 /* Call */ = {
 			isa = PBXGroup;
 			children = (
-				DC94837E2435BC59004A1E81 /* Calls SupportingFiles */,
+				DCFEA4BB26BA92D600C69678 /* SmileIndia-Bridging-Header.h */,
 				DC9483792435B17A004A1E81 /* CallViewController.swift */,
 			);
 			path = Call;
@@ -1681,22 +1668,6 @@
 				DC082BE0243D9C25002B431B /* EAppointmentCell.swift */,
 			);
 			path = "E-Appointments";
-			sourceTree = "<group>";
-		};
-		DC94837E2435BC59004A1E81 /* Calls SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-				DCF51F012480F32F0095D4F8 /* AudioControllerDelegate.h */,
-				DCF51F002480F32F0095D4F8 /* AudioControllerDelegate.m */,
-				DCF51F022480F32F0095D4F8 /* SINCallKitProvider.h */,
-				DCF51F032480F3300095D4F8 /* SINCallKitProvider.m */,
-				DC94837F2435BCD7004A1E81 /* incoming.wav */,
-				DC9483802435BCD7004A1E81 /* ringback.wav */,
-				DC9483822435BCD7004A1E81 /* SINUIViewController.h */,
-				DC9483812435BCD7004A1E81 /* SINUIViewController.m */,
-				DCF51F062480F3A40095D4F8 /* SmileIndia-Bridging-Header.h */,
-			);
-			path = "Calls SupportingFiles";
 			sourceTree = "<group>";
 		};
 		DC97226B24BDD1260003D9D1 /* Enablex Call */ = {
@@ -1950,7 +1921,6 @@
 				DC211BAD246BC9970058B2B1 /* prescription.storyboard in Resources */,
 				7142E0ED264BD1C600B7B10D /* socioFriendList.storyboard in Resources */,
 				0DBA4DB3222C419C00809A55 /* Profile.storyboard in Resources */,
-				DC9483842435BCD7004A1E81 /* ringback.wav in Resources */,
 				DC5FB4492566443E00793160 /* insurance.storyboard in Resources */,
 				DC44E7252629D67D00D41FE9 /* SocioUser.storyboard in Resources */,
 				5341123324E4383C00AB48B3 /* Sofia Pro Medium Italic Az.otf in Resources */,
@@ -1961,7 +1931,6 @@
 				0DE4D80D220CA40C002D2137 /* Assets.xcassets in Resources */,
 				5341122F24E4383C00AB48B3 /* Sofia Pro Black Az.otf in Resources */,
 				5341123524E4383C00AB48B3 /* Sofia Pro Bold Italic Az.otf in Resources */,
-				DC9483832435BCD7004A1E81 /* incoming.wav in Resources */,
 				0DE4D80B220CA408002D2137 /* Login.storyboard in Resources */,
 				DC0C5558244837A80016ADB5 /* Payments.storyboard in Resources */,
 				7163551E2620EA76008DCBBB /* Facebook.xcassets in Resources */,
@@ -2144,7 +2113,6 @@
 				0D22A27C221274A300131E66 /* StringExtension.swift in Sources */,
 				0DDC3BE222DEFAF700F2B4F8 /* Appointment.swift in Sources */,
 				0D0C1E5722D40D9100BF5AB8 /* TitleCollectionCell.swift in Sources */,
-				DCF51F052480F3300095D4F8 /* SINCallKitProvider.m in Sources */,
 				0D22A271221274A300131E66 /* UIButtonExtension.swift in Sources */,
 				DCD6FF1B26834ED4000A4B75 /* WelcomeScreenTxt.swift in Sources */,
 				0D22A25D2212725700131E66 /* BaseNavigationController.swift in Sources */,
@@ -2199,7 +2167,6 @@
 				DC5DB64C24238DB5008DD215 /* ReferralVC.swift in Sources */,
 				71E0CE4E263876700076D979 /* socioProfileViewController.swift in Sources */,
 				0D49A38D22D1AD730040EE10 /* AppointmentListingController.swift in Sources */,
-				DCF51F042480F3300095D4F8 /* AudioControllerDelegate.m in Sources */,
 				DCF6E85D2695C67D00461435 /* RatingList+Reviews+Rate.swift in Sources */,
 				0D22A275221274A300131E66 /* UITextViewExtension.swift in Sources */,
 				DC9FF90E26942DAB0081AEC4 /* ChangePasswordScreenTxt.swift in Sources */,
@@ -2278,7 +2245,6 @@
 				0D22A231221271FB00131E66 /* Reachability.swift in Sources */,
 				0D22A235221271FB00131E66 /* ParserHelper.swift in Sources */,
 				53212E92250567940098C089 /* SideTableViewCell.swift in Sources */,
-				DC9483852435BCD7004A1E81 /* SINUIViewController.m in Sources */,
 				DC44E71E2629D5DE00D41FE9 /* FriendsListVC.swift in Sources */,
 				7163553F2620EA86008DCBBB /* Reaction.swift in Sources */,
 				0D018F51223AD90B00C848AB /* DoctorImageController.swift in Sources */,
@@ -2521,8 +2487,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SmileIndia/SmileIndia.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = GD46A3UVCR;
 				ENABLE_BITCODE = NO;
@@ -2534,8 +2500,8 @@
 				MARKETING_VERSION = 4.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.droveandpace.vigorto;
 				PRODUCT_NAME = Vigorto;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SmileIndia/Controllers/Call/Calls SupportingFiles/SmileIndia-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = Vigorto_Dist;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/arjun/Desktop/vigortoCICD/SmileIndia/Controllers/Call/SmileIndia-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2551,8 +2517,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SmileIndia/SmileIndia.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = GD46A3UVCR;
 				ENABLE_BITCODE = NO;
@@ -2564,8 +2530,8 @@
 				MARKETING_VERSION = 4.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.droveandpace.vigorto;
 				PRODUCT_NAME = Vigorto;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SmileIndia/Controllers/Call/Calls SupportingFiles/SmileIndia-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = Vigorto_Dist;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/arjun/Desktop/vigortoCICD/SmileIndia/Controllers/Call/SmileIndia-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_WORKSPACE = NO;

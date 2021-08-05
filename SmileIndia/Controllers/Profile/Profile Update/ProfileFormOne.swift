@@ -240,7 +240,9 @@ class ProfileFormOne: BaseViewController {
             
             let EditActionButton = UIAlertAction(title: AlertBtnTxt.cancel.localize(), style: .default) { _ in
             }
+           
             EditActionButton.titleTextColor = UIColor.themeGreen
+            
             alert.addAction(EditActionButton)
             
             
@@ -248,7 +250,9 @@ class ProfileFormOne: BaseViewController {
             { _ in
                 NavigationHandler.pop()
             }
+           
             ContinueActionButton.titleTextColor = UIColor.themeGreen
+            
             alert.addAction(ContinueActionButton)
             
             self.present(alert, animated: true, completion: nil)

@@ -5,6 +5,7 @@
 //  Created by Sakshi on 07/10/20.
 //  Copyright © 2020 Na. All rights reserved.
 //
+import UIKit
 
 class PaddingLabel: UILabel {
     

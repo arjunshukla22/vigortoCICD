@@ -9,7 +9,6 @@
 
 import Foundation
 import UIKit
-import Sinch
 
 enum PushScreen {
     
@@ -51,8 +50,8 @@ enum PushScreen {
     case updateEvngHrsVC(BusinessHour, [String: Any], [[String: Any]], UIImage?, DoctorData)
     case referralVC
     case eAppointments(Appointment)
-    case callingVC(SINCall?,Int)
-    case callVC(SINCall?)
+//    case callingVC(SINCall?,Int)
+//    case callVC(SINCall?)
     case replyVC(ReviewDetailsModel)
     case eAppointmentsList
     case enterOtpVC(Appointment)
@@ -268,15 +267,15 @@ enum PushScreen {
             let controller = EAppointmentsVC.instantiateFromAppStoryboard(.appointment)
             controller.object = appointment
             return controller
-        case .callingVC(let call,let appId):
-            let controller = CallViewController.instantiateFromAppStoryboard(.login)
-            controller.call = call
-            controller.appId = appId
-            return controller
-        case .callVC(let call):
-            let controller = CallViewController.instantiateFromAppStoryboard(.login)
-            controller.call = call
-            return controller
+//        case .callingVC(let call,let appId):
+//            let controller = CallViewController.instantiateFromAppStoryboard(.login)
+//            controller.call = call
+//            controller.appId = appId
+//            return controller
+//        case .callVC(let call):
+//            let controller = CallViewController.instantiateFromAppStoryboard(.login)
+//            controller.call = call
+//            return controller
         case .replyVC(let appointment):
             let controller = ReplyViewController.instantiateFromAppStoryboard(.rating)
             controller.object = appointment

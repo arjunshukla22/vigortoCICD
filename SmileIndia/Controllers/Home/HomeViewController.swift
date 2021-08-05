@@ -917,12 +917,12 @@ class HomeViewController: BaseViewController, UITableViewDelegate, UITableViewDa
     
     func logOutSinchUser() {
         let appDelegate = UIApplication.shared.delegate! as! AppDelegate
-        if let client = appDelegate.client {
-            client.stopListeningOnActiveConnection()
-            client.unregisterPushNotificationDeviceToken()
-            client.terminateGracefully()
-        }
-        appDelegate.client = nil
+//        if let client = appDelegate.client {
+//            client.stopListeningOnActiveConnection()
+//            client.unregisterPushNotificationDeviceToken()
+//            client.terminateGracefully()
+//        }
+//        appDelegate.client = nil
         
     }
     func checkdocs(){

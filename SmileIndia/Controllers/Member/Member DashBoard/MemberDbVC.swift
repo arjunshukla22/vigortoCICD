@@ -7,11 +7,10 @@
 //
 
 import UIKit
-import Sinch
 
 class MemberDbVC: BaseViewController ,UICollectionViewDataSource,UICollectionViewDelegate , UICollectionViewDelegateFlowLayout {
     
-    var client: SINClient!
+//    var client: SINClient!
 
     
     var rewards: Rewards?
@@ -150,12 +149,12 @@ class MemberDbVC: BaseViewController ,UICollectionViewDataSource,UICollectionVie
     
     func logOutSinchUser() {
         let appDelegate = UIApplication.shared.delegate! as! AppDelegate
-        if let client = appDelegate.client {
-            client.stopListeningOnActiveConnection()
-            client.unregisterPushNotificationDeviceToken()
-            client.terminateGracefully()
-        }
-        appDelegate.client = nil
+//        if let client = appDelegate.client {
+//            client.stopListeningOnActiveConnection()
+//            client.unregisterPushNotificationDeviceToken()
+//            client.terminateGracefully()
+//        }
+//        appDelegate.client = nil
 
 
     }

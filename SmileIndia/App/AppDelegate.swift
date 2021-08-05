@@ -12,21 +12,20 @@ import Firebase
 import UserNotifications
 import CallKit
 import PushKit
-import Sinch
+
 import Stripe
 import Localize
 import EZSwiftExtensions
+import AVFoundation
 
 @UIApplicationMain
 
-class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate ,SINClientDelegate,SINCallClientDelegate,SINManagedPushDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
     
     var window: UIWindow?
-    var client: SINClient!
     var player: AVAudioPlayer?
     
-    var push: SINManagedPush?
-    var callKitProvider: SINCallKitProvider?
+   // var callKitProvider: SINCallKitProvider?
     
     var object: Appointment?
     
@@ -441,22 +440,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         
       //  print ("applicationWillEnterForeground")
         
-        weak var call = callKitProvider?.currentEstablishedCall()
-        
-        if call != nil {
-            var top = self.window?.rootViewController
-            while ((top?.presentedViewController) != nil) {
-                top = top?.presentedViewController
-            }
-            
-            // When entering the application via the App button on the CallKit lockscreen,
-            // and unlocking the device by PIN code/Touch ID, applicationWillEnterForeground:
-            // will be invoked twice, and "top" will be CallViewController already after
-            // the first invocation.
-            if !(top!.isMember(of: CallViewController.self))  {
-                NavigationHandler.pushTo(.callVC(call))
-            }
-        }
+//        weak var call = callKitProvider?.currentEstablishedCall()
+//
+//        if call != nil {
+//            var top = self.window?.rootViewController
+//            while ((top?.presentedViewController) != nil) {
+//                top = top?.presentedViewController
+//            }
+//
+//            // When entering the application via the App button on the CallKit lockscreen,
+//            // and unlocking the device by PIN code/Touch ID, applicationWillEnterForeground:
+//            // will be invoked twice, and "top" will be CallViewController already after
+//            // the first invocation.
+//            if !(top!.isMember(of: CallViewController.self))  {
+//                NavigationHandler.pushTo(.callVC(call))
+//            }
+//        }
         
     }
     
@@ -481,78 +480,78 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
     
     func initSinchClient(withUserId userId: String) {
         
-        if client == nil {
-            print("initializing client 2")
-            client = Sinch.client(withApplicationKey: "233c322f-01c7-4253-b972-9097fddd473d",
-                                  applicationSecret: "5k8y9B40QE+jH4HhRen0nw==",
-                                  environmentHost: "clientapi.sinch.com",
-                                  userId: userId)
-            self.client.delegate = self
-            self.client.call().delegate = self
-            self.client.setSupportCalling(true)
-            self.client.enableManagedPushNotifications()
-            self.callKitProvider?.client = self.client
-            
-            self.client.start()
-            self.client.startListeningOnActiveConnection()
-        }
+//        if client == nil {
+//            print("initializing client 2")
+//            client = Sinch.client(withApplicationKey: "233c322f-01c7-4253-b972-9097fddd473d",
+//                                  applicationSecret: "5k8y9B40QE+jH4HhRen0nw==",
+//                                  environmentHost: "clientapi.sinch.com",
+//                                  userId: userId)
+//            self.client.delegate = self
+//            self.client.call().delegate = self
+//            self.client.setSupportCalling(true)
+//            self.client.enableManagedPushNotifications()
+//            self.callKitProvider?.client = self.client
+//
+//            self.client.start()
+//            self.client.startListeningOnActiveConnection()
+//        }
     }
     
-    func handleRemoteNotification(_ userInfo: [AnyHashable : Any]?) {
-        if self.client == nil {
-            let userId = Authentication.customerEmail
-            if userId != nil {
-                initSinchClient(withUserId: userId!)
-            }
-        }
-        DispatchQueue.main.async {
-            self.client?.relayRemotePushNotification(userInfo)
-        }
-    }
+//    func handleRemoteNotification(_ userInfo: [AnyHashable : Any]?) {
+//        if self.client == nil {
+//            let userId = Authentication.customerEmail
+//            if userId != nil {
+//                initSinchClient(withUserId: userId!)
+//            }
+//        }
+//        DispatchQueue.main.async {
+//            self.client?.relayRemotePushNotification(userInfo)
+//        }
+//    }
     
-    func managedPush(_ managedPush: SINManagedPush?,didReceiveIncomingPushWithPayload payload: [AnyHashable : Any]?,forType pushType:String?) {
-        print("didReceiveIncomingPushWithPayload: \(payload?.description ?? "")")
-        
-        // Since iOS 13 the application must report an incoming call to CallKit if a
-        // VoIP push notification was used, and this must be done within the same run
-        // loop as the push is received (i.e. GCD async dispatch must not be used).
-        // See https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/2875784-pushregistry .
-        
-        callKitProvider?.didReceivePush(withPayload: payload)
-        
-        DispatchQueue.main.async {
-            self.handleRemoteNotification(payload)
-            self.push?.didCompleteProcessingPushPayload(payload)
-        }
-    }
+//    func managedPush(_ managedPush: SINManagedPush?,didReceiveIncomingPushWithPayload payload: [AnyHashable : Any]?,forType pushType:String?) {
+//        print("didReceiveIncomingPushWithPayload: \(payload?.description ?? "")")
+//
+//        // Since iOS 13 the application must report an incoming call to CallKit if a
+//        // VoIP push notification was used, and this must be done within the same run
+//        // loop as the push is received (i.e. GCD async dispatch must not be used).
+//        // See https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/2875784-pushregistry .
+//
+//        callKitProvider?.didReceivePush(withPayload: payload)
+//
+//        DispatchQueue.main.async {
+//            self.handleRemoteNotification(payload)
+//            self.push?.didCompleteProcessingPushPayload(payload)
+//        }
+//    }
     
     // MARK: - SINCallClientDelegate
     
-    func client(_ client: SINCallClient!, didReceiveIncomingCall call: SINCall!) {
-        let state = UIApplication.shared.applicationState
-        if state == .active{
-            NavigationHandler.pushTo(.callVC(call))
-        }
-    }
-    
-    func client(_ client: SINCallClient!, willReceiveIncomingCall call: SINCall!) {
-        self.callKitProvider?.willReceiveIncomingCall(call)
-    }
-    
-    //SINCallClient delegates
-    
-    func clientDidStart(_ client: SINClient!) {
-        print("Sinch client started successfully (version: \(Sinch.version()) with userid \(client.userId)")
-    }
-    
-    func clientDidFail(_ client: SINClient!, error: Error!) {
-        print("Sinch client error: \(String(describing: error?.localizedDescription))")
-    }
-    
-    func client(_ client: SINClient, logMessage message: String, area: String, severity: SINLogSeverity, timestamp: Date) {
-        
-        print("\(message)")
-    }
+//    func client(_ client: SINCallClient!, didReceiveIncomingCall call: SINCall!) {
+//        let state = UIApplication.shared.applicationState
+//        if state == .active{
+//            NavigationHandler.pushTo(.callVC(call))
+//        }
+//    }
+//
+//    func client(_ client: SINCallClient!, willReceiveIncomingCall call: SINCall!) {
+//        self.callKitProvider?.willReceiveIncomingCall(call)
+//    }
+//
+//    //SINCallClient delegates
+//
+//    func clientDidStart(_ client: SINClient!) {
+//        print("Sinch client started successfully (version: \(Sinch.version()) with userid \(client.userId)")
+//    }
+//
+//    func clientDidFail(_ client: SINClient!, error: Error!) {
+//        print("Sinch client error: \(String(describing: error?.localizedDescription))")
+//    }
+//
+//    func client(_ client: SINClient, logMessage message: String, area: String, severity: SINLogSeverity, timestamp: Date) {
+//
+//        print("\(message)")
+//    }
     
     
     func registerDevice(userId:String,token:String) -> Void {

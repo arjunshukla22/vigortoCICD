@@ -359,13 +359,13 @@ class AppointmentListingController: UIViewController {
         }
     }
     func logOutSinchUser() {
-        let appDelegate = UIApplication.shared.delegate! as! AppDelegate
-        if let client = appDelegate.client {
-            client.stopListeningOnActiveConnection()
-            client.unregisterPushNotificationDeviceToken()
-            client.terminateGracefully()
-        }
-        appDelegate.client = nil
+//        let appDelegate = UIApplication.shared.delegate! as! AppDelegate
+//        if let client = appDelegate.client {
+//            client.stopListeningOnActiveConnection()
+//            client.unregisterPushNotificationDeviceToken()
+//            client.terminateGracefully()
+//        }
+//        appDelegate.client = nil
     }
     
     

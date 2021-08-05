@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Sinch
+
 import UserNotifications
 
 
@@ -51,12 +51,6 @@ class EAppointmentsVC: UIViewController {
     var appId = 0
     
     
-    
-     var client: SINClient {
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        return appDelegate.client
-    }
-    
     var permissionCheck = true
     
 
@@ -80,8 +74,8 @@ class EAppointmentsVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.checkCameraAccess()
-        self.checkMicAccess()
+//        self.checkCameraAccess()
+//        self.checkMicAccess()
         self.checkNotificationsAccess()
     }
 
@@ -125,61 +119,61 @@ class EAppointmentsVC: UIViewController {
             }
         }
     }
-    func checkMicAccess(){
-        switch AVCaptureDevice.authorizationStatus(for: .audio) {
-        case .denied:
-            print("Denied, request permission from settings")
-            self.permissionDenied(text: "Microphone")
-            self.permissionCheck = false
-
-        case .restricted:
-            print("Restricted, device owner must approve")
-            self.permissionDenied(text: "Microphone")
-            self.permissionCheck = false
-
-        case .authorized:
-            print("Authorized, proceed")
-        case .notDetermined:
-            AVCaptureDevice.requestAccess(for: .video) { success in
-                if success {
-                    print("Permission granted, proceed")
-                } else {
-                    print("Permission denied")
-                    self.permissionDenied(text: "Microphone")
-                    self.permissionCheck = false
-
-                }
-            }
-        }
-    }
+//    func checkMicAccess(){
+//        switch AVCaptureDevice.authorizationStatus(for: .audio) {
+//        case .denied:
+//            print("Denied, request permission from settings")
+//            self.permissionDenied(text: "Microphone")
+//            self.permissionCheck = false
+//
+//        case .restricted:
+//            print("Restricted, device owner must approve")
+//            self.permissionDenied(text: "Microphone")
+//            self.permissionCheck = false
+//
+//        case .authorized:
+//            print("Authorized, proceed")
+//        case .notDetermined:
+//            AVCaptureDevice.requestAccess(for: .video) { success in
+//                if success {
+//                    print("Permission granted, proceed")
+//                } else {
+//                    print("Permission denied")
+//                    self.permissionDenied(text: "Microphone")
+//                    self.permissionCheck = false
+//
+//                }
+//            }
+//        }
+//    }
     
-    func checkCameraAccess() {
-        switch AVCaptureDevice.authorizationStatus(for: .video) {
-        case .denied:
-            print("Denied, request permission from settings")
-            self.permissionDenied(text: "Camera")
-            self.permissionCheck = false
-
-        case .restricted:
-            print("Restricted, device owner must approve")
-            self.permissionDenied(text: "Camera")
-            self.permissionCheck = false
-
-        case .authorized:
-            print("Authorized, proceed")
-        case .notDetermined:
-            AVCaptureDevice.requestAccess(for: .video) { success in
-                if success {
-                    print("Permission granted, proceed")
-                } else {
-                    print("Permission denied")
-                    self.permissionDenied(text: "Camera")
-                    self.permissionCheck = false
-
-                }
-            }
-        }
-    }
+//    func checkCameraAccess() {
+//        switch AVCaptureDevice.authorizationStatus(for: .video) {
+//        case .denied:
+//            print("Denied, request permission from settings")
+//            self.permissionDenied(text: "Camera")
+//            self.permissionCheck = false
+//
+//        case .restricted:
+//            print("Restricted, device owner must approve")
+//            self.permissionDenied(text: "Camera")
+//            self.permissionCheck = false
+//
+//        case .authorized:
+//            print("Authorized, proceed")
+//        case .notDetermined:
+//            AVCaptureDevice.requestAccess(for: .video) { success in
+//                if success {
+//                    print("Permission granted, proceed")
+//                } else {
+//                    print("Permission denied")
+//                    self.permissionDenied(text: "Camera")
+//                    self.permissionCheck = false
+//
+//                }
+//            }
+//        }
+//    }
     
     func permissionDenied(text:String){
         DispatchQueue.main.async{
@@ -205,18 +199,18 @@ class EAppointmentsVC: UIViewController {
     }
 
     
-    private func getPrivacyAccess(){
-        let vStatus = AVCaptureDevice.authorizationStatus(for: .video)
-        if(vStatus == AVAuthorizationStatus.notDetermined){
-            AVCaptureDevice.requestAccess(for: .video, completionHandler: { (granted: Bool) in
-            })
-        }
-        let aStatus = AVCaptureDevice.authorizationStatus(for: .audio)
-        if(aStatus == AVAuthorizationStatus.notDetermined){
-            AVCaptureDevice.requestAccess(for: .audio, completionHandler: { (granted: Bool) in
-            })
-        }
-    }
+//    private func getPrivacyAccess(){
+//        let vStatus = AVCaptureDevice.authorizationStatus(for: .video)
+//        if(vStatus == AVAuthorizationStatus.notDetermined){
+//            AVCaptureDevice.requestAccess(for: .video, completionHandler: { (granted: Bool) in
+//            })
+//        }
+//        let aStatus = AVCaptureDevice.authorizationStatus(for: .audio)
+//        if(aStatus == AVAuthorizationStatus.notDetermined){
+//            AVCaptureDevice.requestAccess(for: .audio, completionHandler: { (granted: Bool) in
+//            })
+//        }
+//    }
     
  /*  override func viewWillAppear(_ animated: Bool) {
        NotificationCenter.default.addObserver(self, selector: #selector(self.callAppIdNotificationReceived(notification:)), name: Notification.Name("callAppId"), object: nil)

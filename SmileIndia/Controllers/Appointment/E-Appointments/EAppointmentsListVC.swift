@@ -8,6 +8,7 @@
 
 import UIKit
 import Localize
+import AVFoundation
 
 class EAppointmentsListVC: UIViewController {
     
