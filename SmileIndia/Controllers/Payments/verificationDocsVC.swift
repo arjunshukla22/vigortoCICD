@@ -32,7 +32,7 @@ class verificationDocsVC: UIViewController {
             self.FrontImageView.image = $0.crop(to: size)
             let frontsize = self.FrontImageView.image?.size
             print("front image size")
-            print(frontsize)
+          //  print(frontsize)
             self.imageArray.append(self.FrontImageView.image!)
            
            
